@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KameraAbenteuer | Katrin Tschachler Berger - Fotoreisen Afrika</title>
+    <meta name="description" content="Exklusive Fotoreisen und Safaris nach Afrika mit Fotografin Katrin Tschachler Berger.">
+    <meta name="keywords" content="Fotoreisen Afrika, Safari Fotografie, Wildlife Fotografie, Katrin Tschachler Berger">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <nav>
+        <div class="logo-container">
+            <img id="nav-logo" src="" alt="KameraAbenteuer Logo" class="logo-img">
+            <span class="brand-name" style="color: #fff; font-weight: bold;">KameraAbenteuer</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Start</a></li>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#touren">Fotoreisen</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>KAMERA ABENTEUER</h1>
+        <p>Tour Design & Fotografie von Katrin Tschachler Berger</p>
+        <div class="cta-group">
+            <a href="#touren" class="btn btn-primary">Fotoreisen entdecken</a>
+            <a href="#portfolio" class="btn btn-secondary">Portfolio ansehen</a>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="about-content">
+            <div>
+                <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Katrin Tschachler Berger</h2>
+                <p>Willkommen bei KameraAbenteuer! Ich bin leidenschaftliche Fotografin und organisiere maßgeschneiderte Fotoreisen in die atemberaubendsten Regionen Afrikas.</p>
+                <br>
+                <p>Mit jahrelanger Erfahrung im Feld führe ich kleine Gruppen zu den besten Zeiten an die besten Orte, um das perfekte Licht zu garantieren.</p>
+            </div>
+            <img id="img-katrin" src="" alt="Katrin Tschachler Berger" class="about-img">
+        </div>
+    </section>
+
+    <section id="portfolio" style="background-color: #171411;">
+        <h2 class="section-title">Wildlife Portfolio</h2>
+        <div class="gallery-grid" id="feste-galerie"></div>
+    </section>
+
+    <section id="touren">
+        <h2 class="section-title">Exklusive Fotoreisen</h2>
+        <div class="tour-grid">
+            <div class="tour-card">
+                <img id="img-tour1" src="" alt="Afrika Safari">
+                <div class="tour-info">
+                    <h3>Südafrika & Botswana Wildlife Safari</h3>
+                    <div class="tour-meta">
+                        <span><i class="fa-solid fa-calendar"></i> 12 Tage</span>
+                        <span><i class="fa-solid fa-star"></i> Kleingruppe</span>
+                    </div>
+                    <p>Fokus auf Raubkatzen, Elefantenherden und die Kunst der Wildlife-Fotografie im afrikanischen Busch.</p>
+                    <br>
+                    <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center;">Reise anfragen</a>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img id="img-tour2" src="" alt="Kenia Ranger">
+                <div class="tour-info">
+                    <h3>Magisches Kenia – Zur Großen Wanderung</h3>
+                    <div class="tour-meta">
+                        <span><i class="fa-solid fa-calendar"></i> 14 Tage</span>
+                        <span><i class="fa-solid fa-camera"></i> Intensiv-Workshop</span>
+                    </div>
+                    <p>Erlebe die legendäre Masai Mara zur Zeit der großen Tierwanderungen.</p>
+                    <br>
+                    <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center;">Reise anfragen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" style="background-color: #171411;">
+        <h2 class="section-title">Abenteuer Blog</h2>
+        <div class="blog-grid" id="blog-container"></div>
+    </section>
+
+    <section id="kontakt">
+        <h2 class="section-title">Abenteuer starten</h2>
+        <div class="contact-container">
+            <form action="https://formspree.io/f/DEIN_FORMSPREE_KEY" method="POST" id="contact-form">
+                <div class="form-group">
+                    <label>Dein Name</label>
+                    <input type="text" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Deine E-Mail-Adresse</label>
+                    <input type="email" name="_replyto" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Wofür interessierst du dich?</label>
+                    <select name="interesse" class="form-control">
+                        <option value="Fotoreise">Interesse an einer Fotoreise (Afrika)</option>
+                        <option value="Fotografie">Interesse an Fotografie / Workshops</option>
+                        <option value="Allgemein">Allgemeine Anfrage</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Deine Nachricht</label>
+                    <textarea name="nachricht" rows="6" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Nachricht senden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=61589337243128" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100006589486379" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2026 KameraAbenteuer | Katrin Tschachler Berger.</p>
+    </footer>
+
+    <script src="images.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
