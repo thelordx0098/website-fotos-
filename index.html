@@ -76,19 +76,6 @@
                     <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center;">Reise anfragen</a>
                 </div>
             </div>
-            <div class="tour-card">
-                <img id="img-tour2" src="tiger.jpeg" alt="Kenia Ranger">
-                <div class="tour-info">
-                    <h3>Magisches Kenia – Zur Großen Wanderung</h3>
-                    <div class="tour-meta">
-                        <span><i class="fa-solid fa-calendar"></i> 14 Tage</span>
-                        <span><i class="fa-solid fa-camera"></i> Intensiv-Workshop</span>
-                    </div>
-                    <p>Erlebe die legendäre Masai Mara zur Zeit der großen Tierwanderungen.</p>
-                    <br>
-                    <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center;">Reise anfragen</a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -96,4 +83,51 @@
         <h2 class="section-title">Abenteuer Blog</h2>
         <div style="max-width: 900px; margin: 0 auto; background: #1e1a17; border-radius: 12px; overflow: hidden; display: flex; flex-wrap: wrap; border: 1px solid #3a322d;">
             <div style="flex: 1 1 400px; min-height: 250px;">
-                <img src="flamingo.jpeg" alt="Featured Post" style="width: 100%; height: 100%; object-fit
+                <img src="flamingo.jpeg" alt="Featured Post" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="flex: 1 1 400px; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                <span style="color: #f3a953; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">01. Juni 2026</span>
+                <h3 style="font-family: 'Cinzel', serif; color: #fff; font-size: 1.8rem; margin-bottom: 15px; margin-top: 0;">Das perfekte Licht in der Steppe</h3>
+                <p style="color: #a59285; line-height: 1.6; font-size: 0.95rem; margin: 0;">Die afrikanische Sonne stellt Fotografen vor extreme Herausforderungen. Erfahre, warum die goldene Stunde am frühen Morgen über Erfolg oder Misserfolg deiner Wildlife-Aufnahmen entscheidet und wie du deine Kamera optimal einstellst.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" style="padding: 60px 20px; background-color: #120f0d;">
+        <h2 class="section-title">Abenteuer starten</h2>
+        <div style="max-width: 550px; margin: 0 auto; background: #1e1a17; padding: 40px; border-radius: 12px; border: 1px solid #3a322d; box-sizing: border-box;">
+            
+            <form action="https://formspree.io/f/xzdwlled" method="POST" id="contact-form">
+                
+                <div style="margin-bottom: 20px; text-align: left;">
+                    <label style="display: block; color: #fff; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; font-family: 'Montserrat', sans-serif;">Dein Name</label>
+                    <input type="text" name="name" style="width: 100%; padding: 14px; background: #120f0d; border: 1px solid #4a3e36; color: #fff; border-radius: 6px; font-family: 'Montserrat', sans-serif; box-sizing: border-box; display: block;" required>
+                </div>
+                
+                <div style="margin-bottom: 20px; text-align: left;">
+                    <label style="display: block; color: #fff; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; font-family: 'Montserrat', sans-serif;">Deine E-Mail-Adresse</label>
+                    <input type="email" name="_replyto" style="width: 100%; padding: 14px; background: #120f0d; border: 1px solid #4a3e36; color: #fff; border-radius: 6px; font-family: 'Montserrat', sans-serif; box-sizing: border-box; display: block;" required>
+                </div>
+                
+                <div style="margin-bottom: 25px; text-align: left;">
+                    <label style="display: block; color: #fff; margin-bottom: 8px; font-weight: 600; font-size: 0.9rem; font-family: 'Montserrat', sans-serif;">Deine Nachricht</label>
+                    <textarea name="nachricht" rows="6" style="width: 100%; padding: 14px; background: #120f0d; border: 1px solid #4a3e36; color: #fff; border-radius: 6px; font-family: 'Montserrat', sans-serif; box-sizing: border-box; resize: vertical; display: block;" required></textarea>
+                </div>
+                
+                <input type="text" name="_gotcha" style="display:none">
+                
+                <button type="submit" id="submit-btn" style="width: 100%; padding: 16px; background: #f3a953; border: none; color: #171411; font-weight: bold; border-radius: 6px; cursor: pointer; font-size: 1rem; font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: 1px; display: block;">Nachricht senden</button>
+                
+                <div id="form-status" style="margin-top: 20px; font-weight: bold; text-align: center; font-family: 'Montserrat', sans-serif; font-size: 0.95rem;"></div>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 KameraAbenteuer | Katrin Tschachler Berger.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
