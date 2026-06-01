@@ -1,1 +1,8 @@
-
+{
+  "name": "kameraabenteuer-theme",
+  "description": "Custom Theme für KameraAbenteuer",
+  "version": "1.0.0",
+  "engines": {
+    "ghost": ">=5.0.0"
+  }
+}
