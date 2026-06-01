@@ -60,35 +60,44 @@
         </div>
     </section>
 
-    <section id="touren" style="padding: 60px 20px;">
+    <section id="touren" style="padding: 60px 20px; max-width: 1200px; margin: 0 auto;">
         <h2 class="section-title">Exklusive Fotoreisen</h2>
-        <div class="tour-grid">
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
             
-            <div class="tour-card">
-                <img id="img-tour1" src="antilope.jpeg" alt="Afrika Safari">
-                <div class="tour-info">
-                    <h3>Südafrika & Botswana Wildlife Safari</h3>
-                    <div class="tour-meta">
-                        <span><i class="fa-solid fa-calendar"></i> 12 Tage</span>
-                        <span><i class="fa-solid fa-star"></i> Kleingruppe</span>
+            <div class="tour-card" style="margin: 0; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                <img id="img-tour1" src="antilope.jpeg" alt="Afrika Safari" style="width: 100%; object-fit: cover;">
+                <div class="tour-info" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3>Südafrika & Botswana Wildlife Safari</h3>
+                        <div class="tour-meta">
+                            <span><i class="fa-solid fa-calendar"></i> 12 Tage</span>
+                            <span><i class="fa-solid fa-star"></i> Kleingruppe</span>
+                        </div>
+                        <p>Fokus auf Raubkatzen, Elefantenherden und die Kunst der Wildlife-Fotografie im afrikanischen Busch.</p>
                     </div>
-                    <p>Fokus auf Raubkatzen, Elefantenherden und die Kunst der Wildlife-Fotografie im afrikanischen Busch.</p>
-                    <br>
-                    <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center;">Reise anfragen</a>
+                    <div>
+                        <br>
+                        <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center; width: 100%; box-sizing: border-box;">Reise anfragen</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="tour-card">
-                <img id="img-tour2" src="tiger.jpeg" alt="Kenia Ranger">
-                <div class="tour-info">
-                    <h3>Magisches Kenia – Zur Großen Wanderung</h3>
-                    <div class="tour-meta">
-                        <span><i class="fa-solid fa-calendar"></i> 14 Tage</span>
-                        <span><i class="fa-solid fa-camera"></i> Intensiv-Workshop</span>
+            <div class="tour-card" style="margin: 0; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                <img id="img-tour2" src="tiger.jpeg" alt="Kenia Ranger" style="width: 100%; object-fit: cover;">
+                <div class="tour-info" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3>Magisches Kenia – Zur Großen Wanderung</h3>
+                        <div class="tour-meta">
+                            <span><i class="fa-solid fa-calendar"></i> 14 Tage</span>
+                            <span><i class="fa-solid fa-camera"></i> Intensiv-Workshop</span>
+                        </div>
+                        <p>Erlebe die legendäre Masai Mara zur Zeit der großen Tierwanderungen.</p>
                     </div>
-                    <p>Erlebe die legendäre Masai Mara zur Zeit der großen Tierwanderungen.</p>
-                    <br>
-                    <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center;">Reise anfragen</a>
+                    <div>
+                        <br>
+                        <a href="#kontakt" class="btn btn-primary" style="display:block; text-align:center; width: 100%; box-sizing: border-box;">Reise anfragen</a>
+                    </div>
                 </div>
             </div>
 
