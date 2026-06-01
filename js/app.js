@@ -12,10 +12,13 @@ const BLOG_POSTS = [
 
 function displayBlog() {
     const container = document.getElementById('blog-container');
-    if (!container) return;
+    if (!container) {
+        console.error("Blog-Container wurde im HTML nicht gefunden!");
+        return;
+    }
 
     if (BLOG_POSTS.length === 0) {
-        container.innerHTML = "<p>Noch keine Blog-Beiträge vorhanden.</p>";
+        container.innerHTML = "<p style='color: #fff; text-align: center;'>Noch keine Blog-Beiträge vorhanden.</p>";
         return;
     }
 
@@ -38,7 +41,7 @@ function displayBlog() {
         html += `<div class="blog-stack">`;
         html += olderPosts.map(post => `
             <div class="stack-card">
-                <img src="${post.img}" alt="Minitaturbild">
+                <img src="${post.img}" alt="Miniaturbild">
                 <div class="stack-body">
                     <span class="blog-date">${post.date}</span>
                     <h3>${post.title}</h3>
@@ -60,7 +63,10 @@ function initContactForm() {
     const status = document.getElementById("form-status");
     const button = document.getElementById("submit-btn");
 
-    if (!form) return;
+    if (!form) {
+        console.error("Kontaktformular wurde im HTML nicht gefunden!");
+        return;
+    }
 
     form.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -101,7 +107,13 @@ function initContactForm() {
     });
 }
 
-window.addEventListener('DOMContentLoaded', () => {
+// Skripte sicher ausführen, sobald das Dokument geladen ist
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        displayBlog();
+        initContactForm();
+    });
+} else {
     displayBlog();
     initContactForm();
-});
+}
