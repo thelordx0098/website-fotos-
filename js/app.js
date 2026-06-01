@@ -4,7 +4,7 @@ function loadBlogPosts() {
             title: "Mein perfekter Tag in der Serengeti",
             date: "01. Juni 2026",
             text: "Die Sonne geht langsam über der Akaziensteppe auf...",
-            img: "1b39a865-a637-4bbe-95e3-717f1d26c465.jpeg" // Nutzt direkt den Flamingo als Vorschaubild
+            img: "flamingo.jpeg"
         }
     ];
     
