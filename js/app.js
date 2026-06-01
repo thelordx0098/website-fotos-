@@ -1,61 +1,4 @@
 // ==========================================
-// BLOG SYSTEM (Der Stack-Look)
-// ==========================================
-const BLOG_POSTS = [
-    {
-        title: "Mein perfekter Tag in der Serengeti",
-        date: "01. Juni 2026",
-        text: "Die Sonne geht langsam über der Akaziensteppe auf. Ein unglaublicher Moment, den wir direkt mit der Kamera festhalten konnten...",
-        img: "flamingo.jpeg"
-    }
-];
-
-function displayBlog() {
-    const container = document.getElementById('blog-container');
-    if (!container) {
-        console.error("Blog-Container wurde im HTML nicht gefunden!");
-        return;
-    }
-
-    if (BLOG_POSTS.length === 0) {
-        container.innerHTML = "<p style='color: #fff; text-align: center;'>Noch keine Blog-Beiträge vorhanden.</p>";
-        return;
-    }
-
-    const [latestPost, ...olderPosts] = BLOG_POSTS;
-
-    let html = `
-        <div class="blog-featured">
-            <div class="featured-img-wrapper">
-                <img src="${latestPost.img}" alt="Featured Post">
-            </div>
-            <div class="featured-content">
-                <span class="blog-date">${latestPost.date}</span>
-                <h2>${latestPost.title}</h2>
-                <p>${latestPost.text}</p>
-            </div>
-        </div>
-    `;
-
-    if (olderPosts.length > 0) {
-        html += `<div class="blog-stack">`;
-        html += olderPosts.map(post => `
-            <div class="stack-card">
-                <img src="${post.img}" alt="Miniaturbild">
-                <div class="stack-body">
-                    <span class="blog-date">${post.date}</span>
-                    <h3>${post.title}</h3>
-                    <p>${post.text.substring(0, 80)}...</p>
-                </div>
-            </div>
-        `).join('');
-        html += `</div>`;
-    }
-
-    container.innerHTML = html;
-}
-
-// ==========================================
 // KONTAKTFORMULAR (Formspree AJAX Versand)
 // ==========================================
 function initContactForm() {
@@ -63,10 +6,7 @@ function initContactForm() {
     const status = document.getElementById("form-status");
     const button = document.getElementById("submit-btn");
 
-    if (!form) {
-        console.error("Kontaktformular wurde im HTML nicht gefunden!");
-        return;
-    }
+    if (!form) return;
 
     form.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -107,13 +47,9 @@ function initContactForm() {
     });
 }
 
-// Skripte sicher ausführen, sobald das Dokument geladen ist
+// Starten, sobald das Dokument geladen ist
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        displayBlog();
-        initContactForm();
-    });
+    document.addEventListener('DOMContentLoaded', initContactForm);
 } else {
-    displayBlog();
     initContactForm();
 }
